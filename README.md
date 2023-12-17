@@ -8,8 +8,8 @@
 From
 ![Picture of letter light](20230620-222527.jpg)
 to
-https://user-images.githubusercontent.com/126239/151127893-5c98ba8d-c431-4a25-bb1f-e0b33645a2b6.mp4
-![Picture of improved light](20230621-221324.jpg)
+
+https://github.com/joes3029/letter-lighting/assets/82518418/0625cfc0-bf20-49a3-8baa-3cecb988afb5
 
 You've probably seen these letter lights for sale, at about 100ZAR or 20USD. They can make good gifts, but there's a 
 major drawback - they take 2 AA batteries, and these only last for so long. The lights inevitably become a gimmick
@@ -78,6 +78,4 @@ The paint job wasn't perfect, but isn't noticeable when mounted.
 ![Picture of improved light](20230621-221324.jpg)
 
 Now I was happy that the lights were working and each letter was individually controllable, I started adding scripts 
-that various automations could call in Home Assistant. Since we live in aa country with load shedding (AKA scheduled 
-rolling blackouts), I wanted to alert people if power was out (and we were running on backup power from the inverter). 
-These scripts are attached as JohnSignPowerOn.yaml and JohnSignPowerOut.yaml
+that various automations could call in Home Assistant. 
