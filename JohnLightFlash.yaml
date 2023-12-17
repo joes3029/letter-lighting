@@ -1,0 +1,110 @@
+alias: JohnLightFlash
+sequence:
+  - repeat:
+      count: "3"
+      sequence:
+        - service: switch.turn_on
+          data: {}
+          target:
+            entity_id:
+              - switch.j
+              - switch.o
+              - switch.h
+              - switch.n
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 300
+        - service: switch.turn_off
+          data: {}
+          target:
+            entity_id:
+              - switch.j
+              - switch.o
+              - switch.h
+              - switch.n
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 350
+  - repeat:
+      count: "3"
+      sequence:
+        - service: switch.turn_on
+          data: {}
+          target:
+            entity_id: switch.j
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 200
+        - service: switch.turn_on
+          data: {}
+          target:
+            entity_id: switch.o
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 200
+        - service: switch.turn_on
+          data: {}
+          target:
+            entity_id: switch.h
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 200
+        - service: switch.turn_on
+          data: {}
+          target:
+            entity_id: switch.n
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 200
+        - service: switch.turn_off
+          data: {}
+          target:
+            entity_id:
+              - switch.j
+              - switch.o
+              - switch.h
+              - switch.n
+  - repeat:
+      count: "3"
+      sequence:
+        - service: switch.turn_on
+          data: {}
+          target:
+            entity_id:
+              - switch.j
+              - switch.o
+              - switch.h
+              - switch.n
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 300
+        - service: switch.turn_off
+          data: {}
+          target:
+            entity_id:
+              - switch.j
+              - switch.o
+              - switch.h
+              - switch.n
+          enabled: false
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 350
+mode: restart
+icon: mdi:alpha-j
