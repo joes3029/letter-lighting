@@ -1,0 +1,45 @@
+alias: JohnSignPowerOn
+sequence:
+  - repeat:
+      count: "5"
+      sequence:
+        - service: switch.turn_off
+          data: {}
+          target:
+            entity_id:
+              - switch.o
+              - switch.n
+              - switch.j
+              - switch.h
+        - service: switch.turn_on
+          data: {}
+          target:
+            entity_id:
+              - switch.o
+              - switch.n
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 400
+        - service: switch.turn_off
+          data: {}
+          target:
+            entity_id:
+              - switch.o
+              - switch.n
+        - delay:
+            hours: 0
+            minutes: 0
+            seconds: 0
+            milliseconds: 75
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id:
+        - switch.j
+        - switch.o
+        - switch.h
+        - switch.n
+mode: single
+icon: mdi:power-plug
