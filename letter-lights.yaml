@@ -1,0 +1,47 @@
+esphome:
+  name: john-sign-3v-lights
+
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: "fa2904fdadsf030c891b517ca1ad477c0fe"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Letter-Lights"
+    password: "AABds3fgdh4"
+
+captive_portal:
+
+switch:
+  - platform: gpio
+    id: light_relay_J
+    pin: GPIO4
+    name: "J"
+    restore_mode: RESTORE_DEFAULT_OFF
+  - platform: gpio
+    id: light_relay_O
+    pin: GPIO14
+    name: "O"
+    restore_mode: RESTORE_DEFAULT_OFF
+  - platform: gpio
+    id: light_relay_H
+    pin: GPIO12
+    name: "H"
+    restore_mode: RESTORE_DEFAULT_OFF
+  - platform: gpio
+    id: light_relay_N
+    pin: GPIO15
+    name: "N"
+    restore_mode: RESTORE_DEFAULT_OFF
