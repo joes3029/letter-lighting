@@ -78,4 +78,6 @@ The paint job wasn't perfect, but isn't noticeable when mounted.
 ![Picture of improved light](20230621-221324.jpg)
 
 Now I was happy that the lights were working and each letter was individually controllable, I started adding scripts 
-that various automations could call in Home Assistant. 
+that various automations could call in Home Assistant. Since we live in aa country with load shedding (AKA scheduled 
+rolling blackouts), I wanted to alert people if power was out (and we were running on backup power from the inverter). 
+These scripts are attached as JohnSignPowerOn.yaml and JohnSignPowerOut.yaml
