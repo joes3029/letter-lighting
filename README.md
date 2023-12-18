@@ -9,7 +9,7 @@ You've probably seen these letter lights for sale, at about 100ZAR or 20USD. The
 major drawback - they take 2 AA batteries, and these only last for so long. The lights inevitably become gimmick
 gifts that end up gathering dust in a cupboard. 
 
-After realising that the lights ran on  3V (2 x 1.5V AA batteries), I realised that there might be a way to make these 
+After realising that the lights ran on  3V (2 x 1.5V AA batteries), I decided that there might be a way to make these 
 better.
 
 With an ESP8266 or ESP32, some soldering, and spray-paint, you can turn these letters into something special and 
@@ -25,8 +25,8 @@ useful.
 1. Letter lights
 2. ESP32 or ESP8266
 3. Soldering iron and kit
-4. USB Charger or alternate 5V power supply
-5. Spraypaint
+4. USB charger or alternate 5V power supply
+5. Spray-paint
 6. Multimeter - Optional but very handy 
 
 ## Let's Get Started
@@ -62,16 +62,20 @@ the letters, it meant the power cable had to run behind all of them to get to th
 
 ![ESP8266 in place](20230620-214913.jpg)
 
+You can use the built-in micro USB connector, though these connectors are liable to detach from the board or the USB 
+cable might fall out. I cut open my USB cable, found the 5V and Gnd wires, and used these directly on the board instead.  
+
 I connected each letter up, making sure to keep a common ground. I overspecced on my connecting cable, which ended
 up being a bit stiff and difficult to comfortably fit the way I wanted (see 
 [Power Considerations](#power-considerations)). With some patience, I was able to get each letter connected and working 
-as expected. The letters I used had small mounting holes that were ideal for running the wires inside each letter. 
+as expected. The letters I used had small mounting holes in the back that were ideal for running the wires inside each 
+letter. 
 
 By soldering the wires onto the switch and battery connector, it's possible to have the switch on the back work to 
 switch off lights manually if needed. 
 
 My order of cable connectors didn't arrive in time, so I made do without as I don't plan on moving this sign. The
-right cable to connect the letters and actual connectors for each letter could be a big quality of life improvement.
+right cable to connect the letters and actual connectors for each letter are definitely recommended!
 
 ![Applying spraypaint](20230621-153329.jpg)
 
@@ -81,7 +85,6 @@ allowed the paint to adhere better, though I still ended up doing multiple coats
 ![Ready to mount](20230621-181803.jpg)
 
 The paint job wasn't perfect, but isn't noticeable when mounted. 
-
 *Gunk on my camera lens is definitely noticeable though* 
 
 ![Picture of improved light](20230621-221324.jpg)
