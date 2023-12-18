@@ -85,6 +85,7 @@ allowed the paint to adhere better, though I still ended up doing multiple coats
 ![Ready to mount](20230621-181803.jpg)
 
 The paint job wasn't perfect, but isn't noticeable when mounted. 
+
 *Gunk on my camera lens is definitely noticeable though* 
 
 ![Picture of improved light](20230621-221324.jpg)
